@@ -1,7 +1,6 @@
 #!/bin/bash
 
 TOOLCHAIN=/tmp/Shou
-SYSROOT=$TOOLCHAIN/sysroot/
 $ANDROID_NDK/build/tools/make-standalone-toolchain.sh --toolchain=arm-linux-androideabi-4.8 \
   --system=linux-x86_64 --platform=android-19 --install-dir=$TOOLCHAIN
 
